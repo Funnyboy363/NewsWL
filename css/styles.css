@@ -115,10 +115,16 @@ header {
   header h2 {
     font-size: 1.12rem;
     font-weight: 300; }
-  header ul.social li {
-    list-style-type: none;
+  header figure.logo {
     float: left;
-    width: 25%; }
+    width: 50%; }
+  header figure.logo img {
+    width: 100%; }
+  header ul.social li {
+    margin-top: 1rem;
+    list-style-type: none;
+    float: right;
+    width: 14%; }
   header ul.social li a {
     display: block;
     margin: 0 auto;

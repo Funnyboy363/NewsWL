@@ -28,14 +28,24 @@ header {
 		font-size: 1.12rem;
         font-weight: $normalWeight;
 	} //end h2 rules
+
+	figure.logo {
+		float: left;
+		width: 50%;
+	}
+
+	figure.logo img {
+		width: 100%;
+	}
 	
 	
 /*-----HEADER SOCIAL ICONS-----*/
 	
     ul.social li{
+		margin-top: 1rem;
         list-style-type: none;
-        float: left;
-        width: 25%;
+        float: right;
+        width: 14%;
     }
     
     ul.social li a {
