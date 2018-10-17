@@ -17,7 +17,7 @@ header {
 
 
 figure.logo {
-    width: 40%;
+    width: 30%;
     position: absolute;
     bottom: 0;
 }
@@ -62,7 +62,9 @@ nav {
 	padding: .7em .9em;
 	
 	}
-	ul li a:hover {background: darken($menuColor,10%);}
+	ul li a:hover {background: darken($primaryColor,10%);
+	color: $fontColor;
+	}
 	
 	
 	ul li ul { /*rules for the sub menu items*/

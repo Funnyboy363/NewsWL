@@ -186,6 +186,9 @@ nav {
     padding-left: 8%; }
   nav ul li.active > a {
     background-color: black; }
+  nav ul li a:hover {
+    background-color: #97999a;
+    color: #300b0a; }
   nav ul.closed {
     max-height: 0; }
   nav ul.open {
@@ -255,7 +258,7 @@ footer {
     header ul.social li {
       width: auto; }
     header figure.logo {
-      width: 40%;
+      width: 30%;
       position: absolute;
       bottom: 0; }
     header form {
@@ -285,7 +288,8 @@ footer {
       font-size: .9em;
       padding: .7em .9em; }
     nav ul li a:hover {
-      background: #060101; }
+      background: #060101;
+      color: #97999a; }
     nav ul li ul {
       /*rules for the sub menu items*/
       position: absolute;
@@ -316,4 +320,5 @@ footer {
 
   /*  ------------- MAIN -------------  */
   main {
-    margin: auto; } }
+    margin: auto;
+    max-width: 75rem; } }
