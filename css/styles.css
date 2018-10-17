@@ -121,7 +121,7 @@ header {
   header figure.logo img {
     width: 100%; }
   header ul.social li {
-    margin-top: 1rem;
+    margin-top: .3rem;
     list-style-type: none;
     float: right;
     width: 14%; }
@@ -147,6 +147,27 @@ header {
     background-position: -45px -0px; }
   header ul.social .googleplus a:hover {
     background-position: -180px -0px; }
+  header form {
+    z-index: 92; }
+    header form input {
+      margin-top: .4rem;
+      width: 100%;
+      border-radius: 15px;
+      margin-right: .9rem;
+      padding: .4rem .6rem;
+      border: none;
+      font-size: 1em;
+      transition: width .5s;
+      z-index: 92; }
+    header form input:focus {
+      width: 95%; }
+  header input {
+    width: 8em;
+    transition: width .5s;
+    z-index: 999; }
+  header input:focus {
+    width: 12rem;
+    z-index: 999; }
 
 /*  ------------- NAV -------------  */
 nav {
@@ -218,13 +239,27 @@ footer {
     position: relative; }
     header ul.social {
       position: absolute;
-      bottom: .5rem;
+      top: 1rem;
       right: 2%; }
     header ul.social li {
       width: auto; }
+    header figure.logo {
+      width: 40%;
+      position: absolute;
+      bottom: 0; }
+    header form {
+      float: right;
+      margin-top: 4rem; }
+      header form input {
+        width: 100%; }
+      header form input:focus {
+        width: 100%; }
 
   /*  ------------- MAIN -------------  */ }
 @media only screen and (min-width: 64em) {
+  header figure.logo {
+    width: 20%; }
+
   /*  ------------- NAV -------------  */
   nav ul {
     margin-left: 2%;

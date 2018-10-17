@@ -42,7 +42,7 @@ header {
 /*-----HEADER SOCIAL ICONS-----*/
 	
     ul.social li{
-		margin-top: 1rem;
+		margin-top: .3rem;
         list-style-type: none;
         float: right;
         width: 14%;
@@ -67,8 +67,33 @@ header {
         ul.social .facebook a:hover {background-position: -45px -0px;}
         ul.social .googleplus a:hover {background-position: -180px -0px;}
     
-    
-    
+		form {
+			z-index: 92;
+			input {
+				margin-top: .4rem;
+				width: 100%;
+				border-radius: 15px;
+				margin-right: .9rem;
+				padding: .4rem .6rem;
+				border: none;    
+				font-size: 1em;
+				transition: width .5s;
+				z-index: 92;
+			} // end input
+			input:focus {width:95%;}
+		} //end form
+	   
+		
+		
+			input {
+			width: 8em;
+			transition: width .5s;
+				z-index: 999;
+		}   //end input
+		
+		input:focus {width: 12rem;
+		z-index: 999;}
+		
     
     
 	

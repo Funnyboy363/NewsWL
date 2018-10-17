@@ -3,7 +3,7 @@ header {
 	position: relative;
     ul.social {
         position: absolute;
-        bottom: .5rem;
+        top: 1rem;
         right: $gutter;
     }
     
@@ -14,6 +14,27 @@ header {
     ul.social li a {
         
     }
+
+
+figure.logo {
+    width: 40%;
+    position: absolute;
+    bottom: 0;
+}
+
+
+form {
+    float: right;
+    margin-top: 4rem;
+    input {
+        width: 100%;
+    }
+    input:focus {
+        width: 100%;
+    }
+}
+
+
 
 } // end header
 
