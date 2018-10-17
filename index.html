@@ -37,14 +37,28 @@
     </header>
     
 <!-- NAV STARTS HERE -->
-	<nav>
-   		<ul class="clearfix">
-			<li class="active"><a href="news.html">Breaking</a></li>
-			<li><a href="politics.html">Politics</a></li>
-			<li><a href="business.html">Business</a></li>
-			<li><a href="science.html">Science</a></li>
-		</ul>
-	</nav>
+<nav class="clearfix">
+	<button id="hamburgerBtn">&#9776;</button>
+	   <ul id="primaryNav" class="closed">
+		<li><a href="index.html"><span>CURRENT </span>DEALS</a></li>
+			<li class="active"><a href="#"><span>POPULAR </span>DESTINATIONS</a>
+			<ul>
+				<li><a href="index.html">Asia</a></li>
+				<li><a href="index.html">Caribbean</a></li>
+				<li><a href="index.html">Central America</a></li>
+				<li><a href="index.html">Europe</a></li>
+			</ul>
+		</li>
+		<li><a href="#"><span>FAVORITE </span>RESORTS</a>
+		<ul>
+				<li><a href="index.html">Hotel Maroma</a></li>
+				<li><a href="index.html">Atlantis</a></li>
+			</ul>
+		</li>
+		<li><a href="index.html"><span>AWESOME </span>CRUISES</a></li>
+	</ul>
+	
+</nav>
     
     
 <!-- MAIN STARTS HERE -->
@@ -66,6 +80,7 @@
     <footer>
     <p>&copy;World News &bull; <a href="tel:9875551234">987-555-1234</a></p>
     </footer>
-    
+    <!-- PHONE MENU HIDER -->
+<script src="js/menuToggle.js"></script>
 </body>
 </html>
