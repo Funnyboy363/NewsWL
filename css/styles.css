@@ -245,8 +245,7 @@ footer {
 @media only screen and (min-width: 35em) {
   /*-----HEADER SOCIAL ICONS-----*/
   header {
-    position: relative;
-    /* NAVigation  */ }
+    position: relative; }
     header ul.social {
       position: absolute;
       top: 1rem;
@@ -264,43 +263,45 @@ footer {
         width: 100%; }
       header form input:focus {
         width: 100%; }
-    header nav {
-      /* overides the float and line from the parent ul */
-      /* this displays the menus as drop downs  */ }
-      header nav button {
-        display: none; }
-      header nav ul.closed {
-        max-height: 31rem; }
-      header nav ul {
-        margin-left: 2%;
-        border-left: 1px solid rgba(0, 0, 0, 0.2); }
-      header nav ul li {
-        float: left; }
-      header nav ul li a {
-        border: none;
-        border-right: 1px solid rgba(0, 0, 0, 0.2);
-        font-size: .9em;
-        padding: .7em .9em; }
-      header nav ul li a:hover {
-        background: #060101; }
-      header nav ul li ul {
-        /*rules for the sub menu items*/
-        position: absolute;
-        left: -999em;
-        /* pushes the menu way off to the side */
-        background-color: #5a1513;
-        width: 10em;
-        border: none; }
-      header nav ul li ul li {
-        float: none; }
-      header nav ul li ul li a {
-        border: none;
-        border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
-      header nav ul li a span {
-        display: none; }
-      header nav ul li:hover ul {
-        left: auto;
-        margin-left: 0; }
+
+  /* NAVigation  */
+  nav {
+    /* overides the float and line from the parent ul */
+    /* this displays the menus as drop downs  */ }
+    nav button {
+      display: none; }
+    nav ul.closed {
+      max-height: 31rem; }
+    nav ul {
+      margin-left: 2%;
+      border-left: 1px solid rgba(0, 0, 0, 0.2); }
+    nav ul li {
+      float: left; }
+    nav ul li a {
+      border: none;
+      border-right: 1px solid rgba(0, 0, 0, 0.2);
+      font-size: .9em;
+      padding: .7em .9em; }
+    nav ul li a:hover {
+      background: #060101; }
+    nav ul li ul {
+      /*rules for the sub menu items*/
+      position: absolute;
+      left: -999em;
+      /* pushes the menu way off to the side */
+      background-color: #5a1513;
+      width: 10em;
+      border: none; }
+    nav ul li ul li {
+      float: none; }
+    nav ul li ul li a {
+      border: none;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
+    nav ul li a span {
+      display: none; }
+    nav ul li:hover ul {
+      left: auto;
+      margin-left: 0; }
 
   /*  ------------- MAIN -------------  */ }
 @media only screen and (min-width: 64em) {
