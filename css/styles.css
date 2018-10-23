@@ -208,26 +208,36 @@ nav {
     border-radius: 5px; }
 
 /*  ------------- MAIN -------------  */
-main {
+main div.topbox {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-column-gap: 2%;
+  grid-row-gap: .1rem;
+  text-align: center; }
+  main div.topbox figcaption {
+    z-index: 999;
+    display: flex;
+    align-content: flex-end;
+    margin-top: -1.7rem;
+    padding-left: .3rem;
+    padding-bottom: .3rem;
+    background-color: black;
+    color: white;
+    opacity: .6;
+    font-size: 1rem; }
+main div.topbox figure.image {
+  margin: .5rem 0;
+  display: flex;
+  flex-direction: column;
+  background-color: gray;
   width: 100%;
-  min-height: 20rem; }
-  main h1 {
-    font-size: 2rem;
-    margin: 1.5rem 0 .5rem 0;
-    color: #300b0a; }
-  main ul li {
-    width: 50px;
-    height: 50px;
-    background-image: url(../images/SpritePractice.png);
-    background-position: 0 0; }
-  main ul li.blue {
-    background-position: 0 -100px; }
-  main ul li.bee {
-    background-position: -50px -50px; }
-  main ul li.one {
-    background-position: -100px 0; }
-  main ul li.one:hover {
-    background-position: -100px -50px; }
+  height: 135px; }
+  main div.topbox figure.image img {
+    width: 100%;
+    height: 100%; }
+main div.topbox figure.image:nth-child(1) {
+  grid-column: 1 / span 1;
+  height: 240px; }
 
 /*  ------------- FOOTER -------------  */
 footer {
