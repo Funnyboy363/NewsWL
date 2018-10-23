@@ -28,3 +28,26 @@ main {
     
     
 } // end main
+
+
+footer {
+
+div.footwrap {
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-around;
+}
+
+div.footwrap a {
+font-size: .9rem;
+}
+
+div.footwrap article {
+	text-align: left;
+}
+
+
+
+
+}
