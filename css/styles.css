@@ -274,7 +274,7 @@ main div.bottombox figure.image {
     padding-left: .3rem;
     padding-bottom: .3rem;
     color: black;
-    font-size: .9rem; }
+    font-size: 1rem; }
   main div.bottombox figure.image img {
     width: 100%;
     height: 100%; }
@@ -450,18 +450,24 @@ footer {
   main {
     margin: auto;
     max-width: 75rem; }
+    main div.firstbox figcaption {
+      font-size: 2rem; }
     main div.firstbox figure.image {
       width: 50% px;
       height: 330px; }
     main div.topbox figure.image {
       width: 578px;
       height: 162px; }
+    main div.topbox figcaption {
+      font-size: 2rem; }
     main div.bottombox {
       grid-template-columns: 1fr 1fr 1fr 1fr; }
     main div.bottombox figure.image {
       height: 230px;
       width: 100%;
       margin-bottom: 3rem; }
+      main div.bottombox figure.image figcaption {
+        font-size: 1.2rem; }
 
   footer div.footwrap {
     margin: auto;
@@ -470,6 +476,6 @@ footer {
     display: flex;
     justify-content: space-around; }
   footer div.footwrap a {
-    font-size: .9rem; }
+    font-size: 1.1rem; }
   footer div.footwrap article {
     text-align: left; } }

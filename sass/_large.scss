@@ -19,7 +19,21 @@ nav {
 /*  ------------- MAIN -------------  */
 main {
 	margin: auto;
-    max-width: 75rem;
+	max-width: 75rem;
+	
+	div.firstbox {
+		
+	
+		figcaption {
+			
+			font-size: 2rem;
+		}
+	
+	}
+
+
+
+
 	
 	
 	div.firstbox figure.image {
@@ -34,22 +48,41 @@ main {
     }
     
     
+	div.topbox {
+		
 	
+		figcaption {
+			
+			font-size: 2rem;
+		}
+	
+	}
 	
 
 
 
 
 	div.bottombox {
-        grid-template-columns: 1fr 1fr 1fr 1fr; 
+		grid-template-columns: 1fr 1fr 1fr 1fr; 
+		
+	
+
 	}
 
 	div.bottombox figure.image {
 		height: 230px;
 		width: 100%;
 		margin-bottom: 3rem;
+
+		figcaption {
+			font-size: 1.2rem;
+		}
+
 	}
 
+	
+
+	
 
 
     
@@ -69,7 +102,7 @@ div.footwrap {
 }
 
 div.footwrap a {
-font-size: .9rem;
+font-size: 1.1rem;
 }
 
 div.footwrap article {
