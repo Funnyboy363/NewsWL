@@ -5,6 +5,7 @@ Last Updated: 2010-09-17
 Author: Richard Clark - http://richclarkdesign.com 
 Twitter: @rich_clark
 */
+@import url("https://fonts.googleapis.com/css?family=Tenali+Ramakrishna");
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, address, cite, code,
@@ -99,7 +100,7 @@ html {
 
 /* ------------- BODY ------------- */
 body {
-  font-family: "Lato", sans-serif;
+  font-family: "Tenali Ramakrishna", sans-serif;
   font-size: 16px;
   font-weight: 300; }
 
@@ -173,7 +174,8 @@ header {
 nav {
   background-color: #300b0a;
   grid-area: myNavigation;
-  width: 100%; }
+  width: 100%;
+  padding-bottom: .5rem; }
   nav ul li a {
     display: block;
     color: #fff;
@@ -208,12 +210,31 @@ nav {
     border-radius: 5px; }
 
 /*  ------------- MAIN -------------  */
+main div.firstbox {
+  margin: 0 .5rem; }
+  main div.firstbox figcaption {
+    z-index: 999;
+    display: flex;
+    align-content: flex-end;
+    margin-top: -1.7rem;
+    padding-left: .3rem;
+    padding-bottom: .3rem;
+    background-color: black;
+    color: white;
+    opacity: .6;
+    font-size: 1rem; }
+main div.firstbox figure.image {
+  margin: .5rem 0;
+  display: flex;
+  flex-direction: column;
+  background-color: gray;
+  width: 100%;
+  height: 250px; }
+  main div.firstbox figure.image img {
+    width: 100%;
+    height: 100%; }
 main div.topbox {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-column-gap: 2%;
-  grid-row-gap: .1rem;
-  text-align: center; }
+  margin: 0 .5rem; }
   main div.topbox figcaption {
     z-index: 999;
     display: flex;
@@ -235,16 +256,13 @@ main div.topbox figure.image {
   main div.topbox figure.image img {
     width: 100%;
     height: 100%; }
-main div.topbox figure.image:nth-child(1) {
-  grid-column: 1 / span 1;
-  height: 240px; }
 main div.bottombox {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 2%;
   grid-row-gap: .1rem;
   text-align: center;
-  margin: 0 .2rem; }
+  margin: 0 .5rem; }
 main div.bottombox figure.image {
   margin: .6rem 0;
   background-color: gray;
@@ -368,6 +386,48 @@ footer {
       margin-left: 0; }
 
   /*  ------------- MAIN -------------  */
+  main {
+    margin: 0 auto; }
+    main div.topcontent {
+      display: flex;
+      flex-direction: row;
+      margin: 1rem 0; }
+    main div.firstbox figure.image {
+      width: 50% px;
+      height: 300px; }
+      main div.firstbox figure.image img {
+        width: 100%;
+        height: 100%; }
+    main div.topbox figure.image {
+      display: flex;
+      flex-direction: column;
+      background-color: gray;
+      width: 385px;
+      height: 146px; }
+      main div.topbox figure.image img {
+        width: 100%;
+        height: 100%; }
+    main div.bottombox {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 2%;
+      grid-row-gap: .1rem;
+      text-align: center;
+      margin: 0 .5rem; }
+    main div.bottombox figure.image {
+      margin: .6rem 0;
+      width: 100%;
+      height: 300px;
+      margin-bottom: 3rem; }
+      main div.bottombox figure.image figcaption {
+        margin-top: .6rem;
+        padding-left: .3rem;
+        padding-bottom: .3rem;
+        font-size: .9rem; }
+      main div.bottombox figure.image img {
+        width: 100%;
+        height: 100%; }
+
   footer div.footwrap {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -390,10 +450,23 @@ footer {
   main {
     margin: auto;
     max-width: 75rem; }
+    main div.firstbox figure.image {
+      width: 50% px;
+      height: 330px; }
+    main div.topbox figure.image {
+      width: 578px;
+      height: 162px; }
+    main div.bottombox {
+      grid-template-columns: 1fr 1fr 1fr 1fr; }
+    main div.bottombox figure.image {
+      height: 230px;
+      width: 100%;
+      margin-bottom: 3rem; }
 
   footer div.footwrap {
+    margin: auto;
+    max-width: 75rem;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    margin: 0 auto;
     display: flex;
     justify-content: space-around; }
   footer div.footwrap a {
